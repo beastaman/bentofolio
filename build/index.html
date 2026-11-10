@@ -7,16 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Title -->
-    <title>Bentofolio - Tailwind Personal Portfolio Template</title>
+    <!-- Title & SEO -->
+    <title>Mohammed Aman — Full-Stack Developer & AI Automation Expert</title>
+    <meta name="description" content="Mohammed Aman — Full-Stack Developer (5+ yrs) & AI Automation Expert. I build SaaS platforms, AI/ML tools, business automation, dashboards and 3D interactive websites with Next.js, TypeScript, Node.js, Python & Three.js. Founder of DevGrow." />
+    <meta name="author" content="Mohammed Aman" />
+    <meta name="theme-color" content="#7C3AED" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mohammed Aman — Full-Stack Developer & AI Automation Expert" />
+    <meta property="og:description" content="20+ high-impact products across fintech, marketing, analytics, AI and 3D web. Let's turn your idea into a real product." />
+    <meta property="og:image" content="assets/img/profile.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="./assets/css/swiper-bundle.min.css" />
@@ -25,19 +33,23 @@
 </head>
 
 
-<body class="relative h-screen overflow-y-auto overflow-x-hidden bg-light text-dark dark:bg-dark-2 dark:text-light">
+<body class="relative h-screen overflow-y-auto overflow-x-hidden bg-light text-dark antialiased dark:bg-[#05060A] dark:text-light">
+    <a href="#main" class="sr-only z-[100] rounded-lg bg-primary px-4 py-2 text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4">
+        Skip to content
+    </a>
+
     <div class="mx-auto flex max-w-screen-2xl flex-col justify-between gap-4 p-4 lg:gap-6 lg:p-6">
         <!-- Header -->
         <header class="sticky top-0 z-50">
             <div class="">
-                <div class="flex items-center justify-between rounded-2xl bg-white p-3 shadow dark:bg-black dark:shadow-dark">
+                <div class="flex items-center justify-between rounded-2xl border border-black/[0.06] bg-white/80 p-3 shadow-sm backdrop-blur-xl dark:border-white/[0.07] dark:bg-black/70">
                     <!-- Logo -->
                     <a href="index.html" class="inline-flex items-center gap-3 px-3 text-2xl font-semibold text-dark dark:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6">
                             <path fill="currentColor" d="M0 1.5A1.5 1.5 0 0 1 1.5 0H9a1.5 1.5 0 0 1 1.5 1.5v21A1.5 1.5 0 0 1 9 24H1.5A1.5 1.5 0 0 1 0 22.5v-21Zm13.5 0A1.5 1.5 0 0 1 15 0h7.5A1.5 1.5 0 0 1 24 1.5V9a1.5 1.5 0 0 1-1.5 1.5H15A1.5 1.5 0 0 1 13.5 9V1.5Zm0 13.5a1.5 1.5 0 0 1 1.5-1.5h7.5A1.5 1.5 0 0 1 24 15v7.5a1.5 1.5 0 0 1-1.5 1.5H15a1.5 1.5 0 0 1-1.5-1.5V15Z" />
                         </svg>
 
-                        <span> Bento<span class="text-primary">Folio</span> </span>
+                        <span class="tracking-tight">Mohd<span class="text-gradient">Aman</span></span>
                     </a>
 
                     <!-- Navigation menu -->
@@ -99,20 +111,20 @@
                     <div class="hidden items-center gap-4 lg:flex">
                         <!-- Theme appearance toggler -->
                         <div class="">
-                            <button type="button" class="hs-dark-mode group flex h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light hs-dark-mode-active:hidden dark:text-gray-400 dark:hover:text-gray-500" data-hs-theme-click-value="dark">
+                            <button type="button" class="hs-dark-mode group flex h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light hs-dark-mode-active:hidden dark:text-gray-400 dark:hover:text-gray-500" data-hs-theme-click-value="dark" aria-label="Switch to dark mode">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
                                     <path d="M11.8 3a8.656 8.656 0 0 0-4.523 1.28A8.918 8.918 0 0 0 4.04 7.756a9.167 9.167 0 0 0 .44 9.24 8.863 8.863 0 0 0 3.553 3.137 8.633 8.633 0 0 0 4.624.824 8.69 8.69 0 0 0 4.381-1.723 8.973 8.973 0 0 0 2.892-3.78c.3-.738-.419-1.48-1.142-1.179a5.604 5.604 0 0 1-3.892.15 5.74 5.74 0 0 1-3.083-2.431 5.956 5.956 0 0 1-.848-3.886c.17-1.357.8-2.61 1.78-3.541l.069-.072c.485-.567.099-1.488-.668-1.488h-.234l-.06-.005L11.8 3Z" />
                                 </svg>
                             </button>
-                            <button type="button" class="hs-dark-mode group hidden h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light hs-dark-mode-active:flex dark:text-[#FD7E41] dark:hover:bg-dark dark:hover:text-[#FD7E41]" data-hs-theme-click-value="light">
+                            <button type="button" class="hs-dark-mode group hidden h-10 w-10 items-center justify-center rounded-lg text-center font-medium text-dark transition hover:bg-light hs-dark-mode-active:flex dark:text-[#FD7E41] dark:hover:bg-dark dark:hover:text-[#FD7E41]" data-hs-theme-click-value="light" aria-label="Switch to light mode">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="h-6 w-6">
                                     <path d="M10 15.833a.833.833 0 0 1 .828.736l.005.098v.833a.833.833 0 0 1-1.66.097l-.006-.097v-.833a.833.833 0 0 1 .833-.834Zm5.26-1.741.08.069.582.583a.833.833 0 0 1-1.1 1.248l-.078-.07-.583-.583a.833.833 0 0 1 1.015-1.306l.085.059Zm-9.42.068a.833.833 0 0 1 .068 1.1l-.069.08-.583.582a.833.833 0 0 1-1.248-1.1l.07-.078.583-.583a.833.833 0 0 1 1.178 0ZM3.333 9.167a.833.833 0 0 1 .098 1.66l-.098.006H2.5a.833.833 0 0 1-.098-1.66l.098-.006h.833Zm14.167 0a.833.833 0 0 1 .098 1.66l-.098.006h-.833a.833.833 0 0 1-.098-1.66l.098-.006h.833ZM5.178 4.008l.078.07.583.583a.833.833 0 0 1-1.1 1.247l-.078-.069-.583-.583A.833.833 0 0 1 5.092 3.95l.086.058Zm10.744.069a.833.833 0 0 1 .07 1.1l-.07.079-.583.583a.833.833 0 0 1-1.247-1.1l.069-.078.583-.584a.833.833 0 0 1 1.178 0ZM10 1.667a.833.833 0 0 1 .828.736l.005.097v.833a.833.833 0 0 1-1.66.098l-.006-.098V2.5A.833.833 0 0 1 10 1.667Zm0 4.166a4.167 4.167 0 1 1-4.163 4.348L5.833 10l.004-.18A4.167 4.167 0 0 1 10 5.832Z" />
                                 </svg>
                             </button>
                         </div>
 
-                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
-                            <span>Let's Talk</span>
+                        <a href="https://cal.com/mohdaman/web-discuss?layout=mobile" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
+                            <span>Book a Call</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
                                 <path d="M17.5 11.667v-5h-5" />
                                 <path d="m17.5 6.667-7.5 7.5-7.5-7.5" />
@@ -142,7 +154,7 @@
                             <path fill="currentColor" d="M0 1.5A1.5 1.5 0 0 1 1.5 0H9a1.5 1.5 0 0 1 1.5 1.5v21A1.5 1.5 0 0 1 9 24H1.5A1.5 1.5 0 0 1 0 22.5v-21Zm13.5 0A1.5 1.5 0 0 1 15 0h7.5A1.5 1.5 0 0 1 24 1.5V9a1.5 1.5 0 0 1-1.5 1.5H15A1.5 1.5 0 0 1 13.5 9V1.5Zm0 13.5a1.5 1.5 0 0 1 1.5-1.5h7.5A1.5 1.5 0 0 1 24 15v7.5a1.5 1.5 0 0 1-1.5 1.5H15a1.5 1.5 0 0 1-1.5-1.5V15Z" />
                         </svg>
 
-                        <span> Bento<span class="text-primary">Folio</span> </span>
+                        <span class="tracking-tight">Mohd<span class="text-gradient">Aman</span></span>
                     </a>
                 </div>
 
@@ -217,8 +229,8 @@
                         <span>Change appearance</span>
                     </button>
 
-                    <a href="contact.html" class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
-                        <span>Let's Talk</span>
+                    <a href="https://cal.com/mohdaman/web-discuss?layout=mobile" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-dark px-6 py-4 text-center text-base font-semibold leading-tight text-white transition hover:bg-primary dark:bg-dark-2 dark:text-white dark:hover:bg-primary dark:hover:text-white">
+                        <span>Book a Call</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
                             <path d="M17.5 11.667v-5h-5" />
                             <path d="m17.5 6.667-7.5 7.5-7.5-7.5" />
@@ -229,443 +241,781 @@
         </div>
 
 
-        <main class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6">
-            <!-- Intro -->
-            <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
-                <div class="aspect-6/4 overflow-hidden rounded-lg bg-light pt-4 text-center dark:bg-dark-2">
-                    <img src="assets/img/profile.png" alt="" class="inline-block h-full w-full scale-110 object-contain object-bottom" />
-                </div>
+        <main id="main" class="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-6">
+            <!-- ============ HERO ============ -->
+            <section class="bento reveal flex flex-col justify-between lg:col-span-8 lg:p-10" aria-labelledby="hero-title">
+                <div class="">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span
+								class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-700 dark:text-emerald-400">
+								<span class="h-2 w-2 animate-pulse-dot rounded-full bg-emerald-500"></span>
+                        Available for new projects
+                        </span>
+                        <span class="chip">Hyderabad, IN · Working worldwide</span>
+                    </div>
 
-                <div class="mt-6">
-                    <h3 class="text-2xl font-semibold dark:text-light">Mohammed Aman 👋</h3>
-                    <p class="mt-2 text-muted dark:text-light/70">
-                        A Passionate
-                        <span class="font-semibold text-dark dark:text-white">
-								Full Stack Developer
-							</span>
-                        🖥️ &
-                        <span class="font-semibold text-dark dark:text-white">
-								Content Creator
-							</span>
-                        having
-                        <span class="font-semibold text-dark dark:text-white"> 3 years </span>
-                        of Experiences over 24+ Country Worldwide.
+                    <h1 id="hero-title" class="mt-6 text-balance text-4xl font-semibold leading-[1.05] tracking-tight text-dark dark:text-white sm:text-5xl xl:text-[64px]">
+                        I build <span class="text-gradient">SaaS, AI automation</span> &amp; 3D web
+                        experiences that ship.
+                    </h1>
+
+                    <p class="mt-6 max-w-2xl text-lg leading-relaxed text-muted dark:text-light/70">
+                        I'm <strong class="font-semibold text-dark dark:text-white">Mohammed Aman</strong> — a
+                        Full-Stack Developer with <strong class="font-semibold text-dark dark:text-white">5+ years</strong>
+                        of experience and an AI Automation Expert. I take products end-to-end, from idea to
+                        production, with clean code and premium UI/UX.
                     </p>
 
-                    <!-- CTA buttons -->
-                    <div class="mt-6 flex flex-wrap gap-2">
-                        <a href="https://calendly.com/mohammedamannawaz/30min" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-primary px-6 py-4 font-medium text-white transition hover:bg-blue-600 focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
-                                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Zm10 3a2 2 0 0 1 2 2m-2-6a6 6 0 0 1 6 6" />
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <a href="https://cal.com/mohdaman/web-discuss?layout=mobile" target="_blank" rel="noopener" class="btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="16" rx="3" />
+                                <path d="M16 3v4M8 3v4M3 11h18" />
                             </svg>
-                            <span>Book A Call</span>
+                            Book a Free Call
                         </a>
-                        <button type="button" data-clipboard-text="mohammedamannawaz@gmail.com" data-clipboard-action="copy" data-clipboard-success-text="Copied to clipboard" class="js-clipboard hs-tooltip inline-flex items-center gap-x-2 rounded-lg border border-light bg-transparent px-6 py-4 font-medium text-dark transition [--trigger:focus] hover:bg-light focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-dark dark:text-light/70 dark:hover:bg-dark dark:hover:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
-                                <path d="M8 10a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2v-8Z" />
-                                <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
-                            </svg>
-                            <span>Copy Email</span>
-
-                            <span
-									class="hs-tooltip-content invisible z-10 hidden rounded-lg bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity hs-tooltip-shown:visible hs-tooltip-shown:opacity-100 dark:bg-slate-700"
-									role="tooltip">
-									Copied to clipboard
-								</span>
-                        </button>
-                    </div>
-
-                    <!-- Social -->
-                    <div class="mt-8 flex flex-wrap items-center gap-2">
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-transparent text-center text-slate-600 transition hover:text-primary focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-dark-2 dark:text-slate-500 dark:hover:text-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10Z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-transparent text-center text-slate-600 transition hover:text-primary focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-dark-2 dark:text-slate-500 dark:hover:text-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                                <path d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.74 3.74 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.862 2.862 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.99 9.99 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903l-.002-.001Z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-transparent text-center text-slate-600 transition hover:text-primary focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-dark-2 dark:text-slate-500 dark:hover:text-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                                <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10Z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-transparent text-center text-slate-600 transition hover:text-primary focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50 dark:border-transparent dark:bg-dark-2 dark:text-slate-500 dark:hover:text-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                                <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022ZM10 15.5l6-3.5-6-3.5v7Z" />
+                        <a href="portfolio.html" class="btn-ghost">
+                            View 17 Live Projects
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                                <path d="M4.167 10h11.666m-4.999 5 5-5m-5-5 5 5" />
                             </svg>
                         </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid grid-cols-1 gap-4 lg:gap-6">
-                <!-- Work Experience -->
-                <div class="group rounded-2xl bg-white px-6 pt-0 shadow dark:bg-black dark:shadow-dark">
-                    <h3 class="relative z-10 bg-white pb-2 pt-6 text-2xl font-semibold dark:bg-black dark:text-light">
-                        Work Experience
-                    </h3>
-
-                    <div class="max-h-[200px] space-y-4 overflow-hidden pb-6 pt-4 [&::-webkit-scrollbar-thumb]:bg-gray-400 dark:[&::-webkit-scrollbar-thumb]:bg-slate-500 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar]:w-0">
-                        <div class="animate-scrollY space-y-4 group-hover:[animation-play-state:paused]">
-                            <div class="flex flex-col gap-1 md:flex-row md:gap-10">
-                                <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
-                                    2023 - Present
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/cloud4c.png" alt="" class="h-5 w-5" />
-                                    </div>
-                                    <div class="">
-                                        <h6 class="text-base font-semibold text-dark dark:text-light/70">
-                                            Cloud4c.
-                                        </h6>
-                                        <p class="text-sm text-muted">
-                                            Fullstack Developer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-1 md:flex-row md:gap-10">
-                                <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
-                                    2022 - 2023
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/imagineit.jpg" alt="" class="h-5 w-5" />
-                                    </div>
-                                    <div class="">
-                                        <h6 class="text-base font-semibold text-dark dark:text-light/70">
-                                            Imagine IT.
-                                        </h6>
-                                        <p class="text-sm text-muted">Junior Frontend Developer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-1 md:flex-row md:gap-10">
-                                <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
-                                    2021 - 2022
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/skillvertex.jpg" alt="" class="h-5 w-5" />
-                                    </div>
-                                    <div class="">
-                                        <h6 class="text-base font-semibold text-dark dark:text-light/70">
-                                            Skill Vertex
-                                        </h6>
-                                        <p class="text-sm text-muted">Web Developer Intern</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-1 md:flex-row md:gap-10">
-                                <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
-                                    2018 - 2021
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/computersociety.jpg" alt="" class="h-5 w-5" />
-                                    </div>
-                                    <div class="">
-                                        <h6 class="text-base font-semibold text-dark dark:text-light/70">
-                                            Computer Society Of India (CSI)
-                                        </h6>
-                                        <p class="text-sm text-muted">Technical head</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="animate-scrollY space-y-4 group-hover:[animation-play-state:paused]">
-                            <div class="flex flex-col gap-1 md:flex-row md:gap-10">
-                                <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
-                                    2023 - Present
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/cloud4c.png" alt="" class="h-5 w-5" />
-                                    </div>
-                                    <div class="">
-                                        <h6 class="text-base font-semibold text-dark dark:text-light/70">
-                                            Cloud4c.
-                                        </h6>
-                                        <p class="text-sm text-muted">
-                                            Fullstack Developer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-1 md:flex-row md:gap-10">
-                                <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
-                                    2022 - 2023
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/imagineit.jpg" alt="" class="h-5 w-5" />
-                                    </div>
-                                    <div class="">
-                                        <h6 class="text-base font-semibold text-dark dark:text-light/70">
-                                            Imagine IT.
-                                        </h6>
-                                        <p class="text-sm text-muted">Junior Frontend Developer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-1 md:flex-row md:gap-10">
-                                <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
-                                    2021 - 2022
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/skillvertex.jpg" alt="" class="h-5 w-5" />
-                                    </div>
-                                    <div class="">
-                                        <h6 class="text-base font-semibold text-dark dark:text-light/70">
-                                            Skill Vertex
-                                        </h6>
-                                        <p class="text-sm text-muted">Web Developer Intern</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-1 md:flex-row md:gap-10">
-                                <p class="mt-1 text-sm font-medium text-muted dark:text-light/70">
-                                    2018 - 2021
-                                </p>
-                                <div class="flex items-center gap-3">
-                                    <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                                        <img src="assets/img/computersociety.jpg" alt="" class="h-5 w-5" />
-                                    </div>
-                                    <div class="">
-                                        <h6 class="text-base font-semibold text-dark dark:text-light/70">
-                                            Computer Society Of India (CSI)
-                                        </h6>
-                                        <p class="text-sm text-muted">Technical head</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Stats -->
+                <dl class="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-black/[0.06] bg-black/[0.06] dark:border-white/[0.07] dark:bg-white/[0.07] sm:grid-cols-4">
+                    <div class="bg-white p-4 dark:bg-[#0B0C12]">
+                        <dt class="eyebrow">Experience</dt>
+                        <dd class="mt-1 text-3xl font-semibold tabular-nums tracking-tight dark:text-white"><span data-count="5">5</span>+ yrs</dd>
                     </div>
-                </div>
-
-                <!-- Expertise -->
-                <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
-                    <h3 class="text-2xl font-semibold dark:text-light">My Expert Area</h3>
-
-                    <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3">
-                        <div class="text-center">
-                            <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                                <img src="assets/img/figma.svg" alt="" class="h-8 w-8" />
-                            </div>
-                            <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                                Figma
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                                <img src="assets/img/nodejs.svg" alt="" class="h-8 w-8" />
-                            </div>
-                            <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                                Nodejs
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                                <img src="assets/img/nextjs.svg" alt="" class="h-8 w-8" />
-                            </div>
-                            <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                                Nextjs
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                                <img src="assets/img/python.svg" alt="" class="h-8 w-8" />
-                            </div>
-                            <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                                Python
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                                <img src="assets/img/mysql.svg" alt="" class="h-8 w-8" />
-                            </div>
-                            <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                                MySQL
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                                <img src="assets/img/docker.svg" alt="" class="h-8 w-8" />
-                            </div>
-                            <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                                Docker
-                            </p>
-                        </div>
+                    <div class="bg-white p-4 dark:bg-[#0B0C12]">
+                        <dt class="eyebrow">Products</dt>
+                        <dd class="mt-1 text-3xl font-semibold tabular-nums tracking-tight dark:text-white"><span data-count="20">20</span>+</dd>
                     </div>
-                </div>
-            </div>
+                    <div class="bg-white p-4 dark:bg-[#0B0C12]">
+                        <dt class="eyebrow">Client revenue</dt>
+                        <dd class="mt-1 text-3xl font-semibold tabular-nums tracking-tight dark:text-white">$<span data-count="90">90</span>K+</dd>
+                    </div>
+                    <div class="bg-white p-4 dark:bg-[#0B0C12]">
+                        <dt class="eyebrow">Delivery</dt>
+                        <dd class="mt-1 text-3xl font-semibold tabular-nums tracking-tight dark:text-white">3–4 wk</dd>
+                    </div>
+                </dl>
+            </section>
 
-            <!-- Projects -->
-            <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
-                <div class="flex flex-wrap items-center justify-between gap-2">
-                    <h3 class="text-2xl font-semibold dark:text-light">Recent Projects</h3>
-                    <a href="portfolio.html" class="inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
-                        <span>All Projects</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
-                            <path d="M4.167 10h11.666m-4.999 5 5-5m-5-5 5 5" />
+            <!-- ============ PROFILE ============ -->
+            <section class="bento reveal flex flex-col lg:col-span-4" style="--d: 80ms" aria-label="Profile">
+                <div class="relative aspect-[5/4] overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 via-fuchsia-500/10 to-accent/20 pt-4 text-center lg:aspect-auto lg:flex-1">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(124,58,237,0.35),transparent_60%)]" aria-hidden="true"></div>
+                    <img src="assets/img/profile.png" alt="Portrait of Mohammed Aman" width="600" height="480" class="relative inline-block h-full w-full scale-110 object-contain object-bottom" />
+                </div>
+                <div class="mt-5 flex items-start justify-between gap-3">
+                    <div>
+                        <h2 class="text-2xl font-semibold tracking-tight dark:text-white">Mohammed Aman</h2>
+                        <p class="mt-1 font-mono text-xs uppercase tracking-[0.16em] text-primary dark:text-primary-light">
+                            Full-Stack · AI Automation
+                        </p>
+                    </div>
+                    <button type="button" data-clipboard-text="mohammedamannawaz@gmail.com" data-clipboard-action="copy" data-clipboard-success-text="Copied to clipboard" class="js-clipboard hs-tooltip icon-btn [--trigger:focus]" aria-label="Copy email address">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                            <path d="M8 10a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2v-8Z" />
+                            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
+                        </svg>
+                        <span class="hs-tooltip-content invisible z-10 hidden rounded-lg bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-sm transition-opacity hs-tooltip-shown:visible hs-tooltip-shown:opacity-100" role="tooltip">Copied!</span>
+                    </button>
+                </div>
+                <div class="mt-6 flex flex-wrap items-center gap-2">
+                    <a href="https://github.com/beastaman" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+                            <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10Z" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/beastaman" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+                            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
+                        </svg>
+                    </a>
+                    <a href="https://devgrow.org" target="_blank" rel="noopener" class="icon-btn" aria-label="DevGrow agency website">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+                        </svg>
+                    </a>
+                    <a href="https://mohdaman-portfolio.vercel.app" target="_blank" rel="noopener" class="icon-btn" aria-label="Previous portfolio">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="16" rx="3" />
+                            <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
+                        </svg>
+                    </a>
+                    <a href="mailto:mohammedamannawaz@gmail.com" class="icon-btn" aria-label="Email Mohammed Aman">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="3" />
+                            <path d="m4 7 8 6 8-6" />
                         </svg>
                     </a>
                 </div>
 
-                <div class="mt-6 space-y-6">
-                    <div class="group relative overflow-hidden rounded-lg bg-light p-4 pb-0 dark:bg-dark-2 md:p-6 md:pb-0">
-                        <div class="relative aspect-6/4 overflow-hidden rounded-t-lg">
-                            <img src="assets/img/project-1.png" alt="" class="h-full w-full rounded-t-lg object-cover object-top transition" />
+            </section>
 
-                            <a href="assets/img/project-1.png" data-gall="project-gallry-1" class="project-gallery-link absolute left-1/2 top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
-                                    <path d="M10 4.167v11.666M4.167 10h11.666" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div class="absolute inset-x-0 bottom-0 flex flex-wrap gap-2 bg-gradient-to-t from-black/20 p-4">
-                            <span
-									class="rounded bg-white px-2 py-1 text-xs font-medium text-primary shadow">
-									Product Design
-								</span>
-                        </div>
+            <!-- ============ TECH STACK ============ -->
+            <section class="bento reveal overflow-hidden lg:col-span-8" aria-labelledby="stack-title">
+                <div class="flex flex-wrap items-end justify-between gap-3">
+                    <div>
+                        <p class="eyebrow"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span> Tech stack</p>
+                        <h2 id="stack-title" class="mt-2 text-2xl font-semibold tracking-tight dark:text-white lg:text-3xl">
+                            Tools I ship production with
+                        </h2>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg bg-light p-4 pb-0 dark:bg-dark-2 md:p-6 md:pb-0">
-                        <div class="relative aspect-6/4 overflow-hidden rounded-t-lg">
-                            <img src="assets/img/project-2.png" alt="" class="h-full w-full rounded-t-lg object-cover object-top transition" />
-
-                            <a href="assets/img/project-2.png" data-gall="project-gallry-2" class="project-gallery-link absolute left-1/2 top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
-                                    <path d="M10 4.167v11.666M4.167 10h11.666" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div class="absolute inset-x-0 bottom-0 flex flex-wrap gap-2 bg-gradient-to-t from-black/20 p-4">
-                            <span
-									class="rounded bg-white px-2 py-1 text-xs font-medium text-primary shadow">
-									Product Design
-								</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Services -->
-            <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark lg:col-span-2">
-                <div class="flex flex-wrap items-center justify-between gap-2">
-                    <h3 class="text-2xl font-semibold dark:text-light">Services I Offered</h3>
-                    <a href="services.html" class="inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
-                        <span>See All Services</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
-                            <path d="M4.167 10h11.666m-4.999 5 5-5m-5-5 5 5" />
-                        </svg>
-                    </a>
+                    <p class="max-w-xs text-sm text-muted dark:text-light/60">
+                        Type-safe by default. Next.js + TypeScript front to back, Python where AI lives.
+                    </p>
                 </div>
 
-                <div class="mt-6 grid grid-cols-2 gap-6 md:grid-cols-4">
-                    <div class="rounded-2xl bg-light p-2 text-center dark:bg-dark-2 md:p-4">
-                        <div class="grid place-content-center rounded-lg bg-white p-6 dark:bg-black">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-12 w-12 text-primary lg:h-16 lg:w-16">
-                                <path d="M8 13.333A5.333 5.333 0 0 1 13.333 8h37.334A5.333 5.333 0 0 1 56 13.333v37.334A5.333 5.333 0 0 1 50.667 56H13.333A5.333 5.333 0 0 1 8 50.667V13.333ZM40 8 8 40M25.334 8l-16 16M53.333 9.333 38.667 24M24 40 10.666 53.333" />
-                                <path d="M56 24H24v32" />
-                            </svg>
-                        </div>
-                        <p class="mt-3 text-base font-medium text-dark dark:text-light/70">
-                            UI UX Design
-                        </p>
+                <!-- Marquee -->
+                <div class="marquee-mask group mt-6 flex overflow-hidden" aria-hidden="true">
+                    <div class="flex min-w-full shrink-0 animate-marquee gap-3 pr-3 group-hover:[animation-play-state:paused]">
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/nextdotjs.svg)"></i>Next.js</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/typescript.svg)"></i>TypeScript</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/react.svg)"></i>React</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/tailwindcss.svg)"></i>Tailwind CSS</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/nodedotjs.svg)"></i>Node.js</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/express.svg)"></i>Express</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/python.svg)"></i>Python</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/fastapi.svg)"></i>FastAPI</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/openai.svg)"></i>OpenAI</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/anthropic.svg)"></i>Claude</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/langchain.svg)"></i>LangChain</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/n8n.svg)"></i>n8n</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/threedotjs.svg)"></i>Three.js</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/greensock.svg)"></i>GSAP</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/framer.svg)"></i>Framer Motion</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/postgresql.svg)"></i>PostgreSQL</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/mongodb.svg)"></i>MongoDB</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/supabase.svg)"></i>Supabase</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/prisma.svg)"></i>Prisma</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/redis.svg)"></i>Redis</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/docker.svg)"></i>Docker</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/vercel.svg)"></i>Vercel</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/stripe.svg)"></i>Stripe</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/figma.svg)"></i>Figma</span>
                     </div>
-                    <div class="rounded-2xl bg-light p-2 text-center dark:bg-dark-2 md:p-4">
-                        <div class="grid place-content-center rounded-lg bg-white p-6 dark:bg-black">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-12 w-12 text-primary lg:h-16 lg:w-16">
-                                <path d="M26.666 18.667A5.333 5.333 0 0 1 32 13.333h16a5.333 5.333 0 0 1 5.333 5.334v26.666A5.333 5.333 0 0 1 48 50.667H32a5.333 5.333 0 0 1-5.334-5.334V18.667Zm-8 0v26.666m-8-24v21.334" />
-                            </svg>
-                        </div>
-                        <p class="mt-3 text-base font-medium text-dark dark:text-light/70">
-                            Mobile App
-                        </p>
+
+                    <div class="flex min-w-full shrink-0 animate-marquee gap-3 pr-3 group-hover:[animation-play-state:paused]">
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/nextdotjs.svg)"></i>Next.js</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/typescript.svg)"></i>TypeScript</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/react.svg)"></i>React</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/tailwindcss.svg)"></i>Tailwind CSS</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/nodedotjs.svg)"></i>Node.js</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/express.svg)"></i>Express</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/python.svg)"></i>Python</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/fastapi.svg)"></i>FastAPI</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/openai.svg)"></i>OpenAI</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/anthropic.svg)"></i>Claude</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/langchain.svg)"></i>LangChain</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/n8n.svg)"></i>n8n</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/threedotjs.svg)"></i>Three.js</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/greensock.svg)"></i>GSAP</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/framer.svg)"></i>Framer Motion</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/postgresql.svg)"></i>PostgreSQL</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/mongodb.svg)"></i>MongoDB</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/supabase.svg)"></i>Supabase</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/prisma.svg)"></i>Prisma</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/redis.svg)"></i>Redis</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/docker.svg)"></i>Docker</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/vercel.svg)"></i>Vercel</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/stripe.svg)"></i>Stripe</span>
+                        <span class="tech-pill"><i class="tech-icon" style="--i:url(https://cdn.jsdelivr.net/npm/simple-icons@13.0.0/icons/figma.svg)"></i>Figma</span>
                     </div>
-                    <div class="rounded-2xl bg-light p-2 text-center dark:bg-dark-2 md:p-4">
-                        <div class="grid place-content-center rounded-lg bg-white p-6 dark:bg-black">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-12 w-12 text-primary lg:h-16 lg:w-16">
-                                <path d="M10.666 13.333a2.667 2.667 0 0 1 2.667-2.666h37.334a2.667 2.667 0 0 1 2.666 2.666v5.334a2.667 2.667 0 0 1-2.666 2.666H13.332a2.666 2.666 0 0 1-2.667-2.666v-5.334Zm0 21.334A2.667 2.667 0 0 1 13.333 32H24a2.667 2.667 0 0 1 2.666 2.667v16A2.667 2.667 0 0 1 24 53.333H13.333a2.666 2.666 0 0 1-2.667-2.666v-16ZM37.334 32h16m-16 10.667h16m-16 10.666h16" />
-                            </svg>
-                        </div>
-                        <p class="mt-3 text-base font-medium text-dark dark:text-light/70">
-                            Product Design
-                        </p>
+
+                </div>
+
+                <!-- Categorised stack -->
+                <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                    <div class="rounded-2xl border border-black/[0.06] p-4 dark:border-white/[0.06]">
+                        <h3 class="eyebrow">Frontend</h3>
+                        <ul class="mt-3 flex flex-wrap gap-1.5">
+                            <li class="chip">Next.js 14/15</li>
+                            <li class="chip">React 19</li>
+                            <li class="chip">TypeScript</li>
+                            <li class="chip">Tailwind CSS</li>
+                            <li class="chip">shadcn/ui</li>
+                            <li class="chip">Framer Motion</li>
+                            <li class="chip">Redux</li>
+                            <li class="chip">React Query</li>
+                        </ul>
                     </div>
-                    <div class="rounded-2xl bg-light p-2 text-center dark:bg-dark-2 md:p-4">
-                        <div class="grid place-content-center rounded-lg bg-white p-6 dark:bg-black">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-12 w-12 text-primary lg:h-16 lg:w-16">
-                                <path d="M36.214 36.773a15.982 15.982 0 0 1 1.12 5.894A15.86 15.86 0 0 1 32 54.56a15.814 15.814 0 0 1-10.666 4.107c-8.827 0-16-7.174-16-16 0-7.36 5.013-13.6 11.786-15.44" />
-                                <path d="M46.88 27.227c6.773 1.84 11.787 8.08 11.787 15.44 0 8.826-7.174 16-16 16A15.814 15.814 0 0 1 32 54.56" />
-                                <path d="M16 21.333a16 16 0 1 0 32 0 16 16 0 0 0-32 0Z" />
-                            </svg>
-                        </div>
-                        <p class="mt-3 text-base font-medium text-dark dark:text-light/70">
-                            Branding
-                        </p>
+                    <div class="rounded-2xl border border-black/[0.06] p-4 dark:border-white/[0.06]">
+                        <h3 class="eyebrow">Backend &amp; APIs</h3>
+                        <ul class="mt-3 flex flex-wrap gap-1.5">
+                            <li class="chip">Node.js</li>
+                            <li class="chip">Express</li>
+                            <li class="chip">Python</li>
+                            <li class="chip">FastAPI</li>
+                            <li class="chip">tRPC</li>
+                            <li class="chip">GraphQL</li>
+                            <li class="chip">REST</li>
+                            <li class="chip">Socket.io</li>
+                            <li class="chip">Zod</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border border-black/[0.06] p-4 dark:border-white/[0.06]">
+                        <h3 class="eyebrow">AI &amp; Automation</h3>
+                        <ul class="mt-3 flex flex-wrap gap-1.5">
+                            <li class="chip">OpenAI</li>
+                            <li class="chip">Claude</li>
+                            <li class="chip">LangChain</li>
+                            <li class="chip">RAG / Vector DB</li>
+                            <li class="chip">AI Agents</li>
+                            <li class="chip">n8n</li>
+                            <li class="chip">Zapier</li>
+                            <li class="chip">Make</li>
+                            <li class="chip">Hugging Face</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border border-black/[0.06] p-4 dark:border-white/[0.06]">
+                        <h3 class="eyebrow">Data</h3>
+                        <ul class="mt-3 flex flex-wrap gap-1.5">
+                            <li class="chip">PostgreSQL</li>
+                            <li class="chip">MongoDB</li>
+                            <li class="chip">Supabase</li>
+                            <li class="chip">Prisma</li>
+                            <li class="chip">Firebase</li>
+                            <li class="chip">Redis</li>
+                            <li class="chip">MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border border-black/[0.06] p-4 dark:border-white/[0.06]">
+                        <h3 class="eyebrow">3D &amp; Motion</h3>
+                        <ul class="mt-3 flex flex-wrap gap-1.5">
+                            <li class="chip">Three.js</li>
+                            <li class="chip">React Three Fiber</li>
+                            <li class="chip">GSAP</li>
+                            <li class="chip">WebGL</li>
+                            <li class="chip">Lenis</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border border-black/[0.06] p-4 dark:border-white/[0.06]">
+                        <h3 class="eyebrow">Cloud &amp; Payments</h3>
+                        <ul class="mt-3 flex flex-wrap gap-1.5">
+                            <li class="chip">Vercel</li>
+                            <li class="chip">AWS</li>
+                            <li class="chip">Docker</li>
+                            <li class="chip">Railway</li>
+                            <li class="chip">GitHub Actions</li>
+                            <li class="chip">Stripe</li>
+                            <li class="chip">Clerk</li>
+                            <li class="chip">Sentry</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Contact -->
-            <div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
-                <marquee behavior="scroll" direction="left" class="overflow-hidden text-nowrap rounded-lg bg-light p-3 text-lg font-medium text-muted dark:bg-dark-2">
-                    Available For Hire 🚀 Crafting Digital Experiences 🎨 Available For Hire 🚀
-                    Crafting Digital Experiences 🎨
-                </marquee>
-
-                <h2 class="mt-4 text-[40px] font-semibold leading-snug text-dark dark:text-light">
-                    Let's👋 <br />
-						Work Together
-                </h2>
-
-                <a href="contact.html" class="mt-6 inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
-                    <span>Let's Talk</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
-                        <path d="M17.5 11.667v-5h-5" />
-                        <path d="m17.5 6.667-7.5 7.5-7.5-7.5" />
+            <!-- ============ DEVGROW AGENCY ============ -->
+            <section class="bento reveal flex flex-col justify-between !border-transparent !bg-gradient-to-br from-[#1E1145] via-[#140C30] to-[#06242B] text-white lg:col-span-4" style="--d: 80ms" aria-labelledby="agency-title">
+                <div class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/40 blur-3xl" aria-hidden="true"></div>
+                <div class="pointer-events-none absolute -bottom-24 -left-10 h-56 w-56 rounded-full bg-accent/30 blur-3xl" aria-hidden="true"></div>
+                <div class="relative">
+                    <p class="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-white/60">
+                        <span class="h-1.5 w-1.5 rounded-full bg-accent-light"></span> My agency
+                    </p>
+                    <h2 id="agency-title" class="mt-3 text-4xl font-bold tracking-tight">DevGrow</h2>
+                    <p class="mt-3 leading-relaxed text-white/75">
+                        Web, SaaS &amp; AI automation studio. We build digital experiences that drive
+                        results — from MVP to scale.
+                    </p>
+                    <ul class="mt-6 grid grid-cols-2 gap-3">
+                        <li class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                            <span class="block text-2xl font-semibold tabular-nums">20+</span>
+                            <span class="text-xs text-white/60">Production apps</span>
+                        </li>
+                        <li class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                            <span class="block text-2xl font-semibold tabular-nums">5+</span>
+                            <span class="text-xs text-white/60">Countries served</span>
+                        </li>
+                        <li class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                            <span class="block text-2xl font-semibold tabular-nums">100%</span>
+                            <span class="text-xs text-white/60">Client satisfaction</span>
+                        </li>
+                        <li class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                            <span class="block text-2xl font-semibold tabular-nums">24/7</span>
+                            <span class="text-xs text-white/60">Support</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://devgrow.org" target="_blank" rel="noopener" class="relative mt-6 inline-flex min-h-[48px] items-center justify-between gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-dark transition hover:bg-accent-light focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                    Visit devgrow.org
+                    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                        <path d="M6 14 14 6M7 6h7v7" />
                     </svg>
                 </a>
-            </div>
+            </section>
+
+            <!-- ============ FEATURED WORK ============ -->
+            <section class="bento lg:col-span-12 lg:p-10" aria-labelledby="work-title">
+                <div class="flex flex-wrap items-end justify-between gap-4">
+                    <div>
+                        <p class="eyebrow"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span> Featured work</p>
+                        <h2 id="work-title" class="mt-2 text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl">
+                            Live products, <span class="text-gradient">real users</span>
+                        </h2>
+                    </div>
+                    <a href="portfolio.html" class="link-arrow">
+                        All 17 projects
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                            <path d="M4.167 10h11.666m-4.999 5 5-5m-5-5 5 5" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+                    <a href="https://whitekaleido.com" target="_blank" rel="noopener" data-cat="3d" aria-label="White Kaleido — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-slate-800 to-zinc-600">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">whitekaleido.com</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">White Kaleido</span>
+                            </div>
+                            <img src="assets/img/projects/white-kaleido.jpg" alt="Screenshot of White Kaleido" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">whitekaleido.com</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">3D Experience</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                White Kaleido
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">Immersive, scroll-driven 3D brand experience with cinematic motion and real-time rendering.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Three.js · React · GSAP</p>
+                        </div>
+                    </a>
+                    <a href="https://www.thesolarisfilms.com" target="_blank" rel="noopener" data-cat="web" aria-label="Solaris Films — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-amber-500 to-rose-500">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">thesolarisfilms.com</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">Solaris Films</span>
+                            </div>
+                            <img src="assets/img/projects/solaris-films.jpg" alt="Screenshot of Solaris Films" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">thesolarisfilms.com</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">Video Production Studio</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                Solaris Films
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">Cinematic website for a Bengaluru video production studio — showreels, services and enquiries.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Next.js · TypeScript · GSAP</p>
+                        </div>
+                    </a>
+                    <a href="https://www.thesetupco.in" target="_blank" rel="noopener" data-cat="web" aria-label="The Setup Co. — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-stone-700 to-amber-600">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">thesetupco.in</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">The Setup Co.</span>
+                            </div>
+                            <img src="assets/img/projects/the-setup-co.jpg" alt="Screenshot of The Setup Co." width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">thesetupco.in</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">Commercial Spaces</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                The Setup Co.
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">Commercial space setup brand — services, portfolio and lead capture, set up seamlessly.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Next.js · TypeScript · Tailwind</p>
+                        </div>
+                    </a>
+                    <a href="https://nimbus-keyboard-3-d.vercel.app" target="_blank" rel="noopener" data-cat="3d" aria-label="Nimbus Keyboard 3D — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-indigo-600 to-sky-500">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">nimbus-keyboard-3-d.vercel.app</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">Nimbus Keyboard 3D</span>
+                            </div>
+                            <img src="assets/img/projects/nimbus-keyboard-3d.jpg" alt="Screenshot of Nimbus Keyboard 3D" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">nimbus-keyboard-3-d.vercel.app</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">3D Product</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                Nimbus Keyboard 3D
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">Interactive 3D product showcase — explore, rotate and customise a mechanical keyboard live.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Three.js · React Three Fiber · GSAP</p>
+                        </div>
+                    </a>
+                    <a href="https://brilliantdojo.net" target="_blank" rel="noopener" data-cat="saas" aria-label="BrilliantDojo — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-fuchsia-600 to-violet-500">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">brilliantdojo.net</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">BrilliantDojo</span>
+                            </div>
+                            <img src="assets/img/projects/brilliantdojo.jpg" alt="Screenshot of BrilliantDojo" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">brilliantdojo.net</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">AI · EdTech</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                BrilliantDojo
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">AI-powered learning platform with personalised paths, progress tracking and admin dashboards.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Next.js · TypeScript · OpenAI · PostgreSQL</p>
+                        </div>
+                    </a>
+                    <a href="https://subredditpro.com" target="_blank" rel="noopener" data-cat="saas" aria-label="SubredditPro — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-orange-600 to-red-500">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">subredditpro.com</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">SubredditPro</span>
+                            </div>
+                            <img src="assets/img/projects/subredditpro.jpg" alt="Screenshot of SubredditPro" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">subredditpro.com</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">SaaS · Reddit Growth</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                SubredditPro
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">Platform that pays creators to grow Reddit communities — campaigns, payouts and dashboards.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Next.js · TypeScript · Node.js · Stripe</p>
+                        </div>
+                    </a>
+                    <a href="https://digital-realtor.vercel.app" target="_blank" rel="noopener" data-cat="saas" aria-label="Digital Realtor — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-amber-500 to-orange-500">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">digital-realtor.vercel.app</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">Digital Realtor</span>
+                            </div>
+                            <img src="assets/img/projects/digital-realtor.jpg" alt="Screenshot of Digital Realtor" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">digital-realtor.vercel.app</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">PropTech SaaS</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                Digital Realtor
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">Real-estate platform with listings, smart search and lead capture for agents.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Next.js · TypeScript · Tailwind</p>
+                        </div>
+                    </a>
+                    <a href="https://umaweb-beta.vercel.app/en/" target="_blank" rel="noopener" data-cat="web" aria-label="UMA — United Motorsports Academy — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-red-600 to-zinc-800">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">umaweb-beta.vercel.app</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">UMA — United Motorsports Academy</span>
+                            </div>
+                            <img src="assets/img/projects/uma.jpg" alt="Screenshot of UMA — United Motorsports Academy" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">umaweb-beta.vercel.app</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">Motorsports Academy</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                UMA — United Motorsports Academy
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">Multilingual, high-energy website for a motorsports academy — programs, events and sign-ups.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Next.js · TypeScript · i18n · GSAP</p>
+                        </div>
+                    </a>
+                    <a href="https://sleftpayments.com" target="_blank" rel="noopener" data-cat="saas" aria-label="Sleft Payments — open live site in new tab" class="project-item reveal group block cursor-pointer rounded-3xl border border-black/[0.06] bg-light/60 p-3 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_40px_-20px_rgba(124,58,237,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <div class="project-shot bg-gradient-to-br from-violet-600 to-indigo-500">
+                            <!-- Fallback cover (shows if screenshot fails) -->
+                            <div class="absolute inset-0 grid place-content-center p-6 text-center" aria-hidden="true">
+                                <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">sleftpayments.com</span>
+                                <span class="mt-2 text-3xl font-bold leading-tight text-white">Sleft Payments</span>
+                            </div>
+                            <img src="assets/img/projects/sleft-payments.jpg" alt="Screenshot of Sleft Payments" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()" />
+                            <!-- Browser chrome -->
+                            <div class="absolute inset-x-0 top-0 flex items-center gap-1.5 bg-gradient-to-b from-black/50 to-transparent px-3 py-2.5" aria-hidden="true">
+                                <span class="h-2 w-2 rounded-full bg-white/60"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/40"></span>
+                                <span class="h-2 w-2 rounded-full bg-white/25"></span>
+                                <span class="ml-2 truncate font-mono text-[10px] text-white/80">sleftpayments.com</span>
+                            </div>
+                            <span
+			class="absolute bottom-3 right-3 inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-dark shadow-lg transition duration-300 lg:translate-y-2 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+			aria-hidden="true">
+			Visit live
+			<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M6 14 14 6M7 6h7v7" /></svg>
+		</span>
+                        </div>
+                        <div class="px-2 pb-2 pt-4">
+                            <p class="eyebrow">SaaS · Fintech</p>
+                            <h3 class="mt-1.5 text-xl font-semibold tracking-tight text-dark transition group-hover:text-primary dark:text-white dark:group-hover:text-primary-light">
+                                Sleft Payments
+                            </h3>
+                            <p class="mt-1.5 text-sm leading-relaxed text-muted dark:text-light/60">Merchant payments platform with secure checkout flows, onboarding and real-time transaction insights.</p>
+                            <p class="mt-3 font-mono text-[11px] text-dark/50 dark:text-light/40">Next.js · TypeScript · Node.js · Stripe</p>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- ============ SERVICES ============ -->
+            <section class="bento reveal lg:col-span-8" aria-labelledby="services-title">
+                <div class="flex flex-wrap items-end justify-between gap-3">
+                    <div>
+                        <p class="eyebrow"><span class="h-1.5 w-1.5 rounded-full bg-fuchsia-500"></span> What I do</p>
+                        <h2 id="services-title" class="mt-2 text-2xl font-semibold tracking-tight dark:text-white lg:text-3xl">
+                            End-to-end, idea to production
+                        </h2>
+                    </div>
+                    <a href="services.html" class="link-arrow">
+                        All services
+                        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                            <path d="M4.167 10h11.666m-4.999 5 5-5m-5-5 5 5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <ul class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                    <li class="rounded-2xl border border-black/[0.06] bg-light/60 p-5 transition hover:border-primary/30 dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <span class="grid h-11 w-11 place-content-center rounded-xl bg-primary/10 text-primary dark:text-primary-light" aria-hidden="true">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M8 21h8M12 18v3M7 9h4M7 13h10" /></svg>
+							</span>
+                        <h3 class="mt-4 font-semibold dark:text-white">SaaS Platforms</h3>
+                        <p class="mt-1 text-sm leading-relaxed text-muted dark:text-light/60">Multi-tenant apps with auth, billing (Stripe), roles &amp; admin.</p>
+                    </li>
+                    <li class="rounded-2xl border border-black/[0.06] bg-light/60 p-5 transition hover:border-primary/30 dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <span class="grid h-11 w-11 place-content-center rounded-xl bg-fuchsia-500/10 text-fuchsia-600 dark:text-fuchsia-400" aria-hidden="true">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" /><circle cx="12" cy="12" r="3" /></svg>
+							</span>
+                        <h3 class="mt-4 font-semibold dark:text-white">AI / ML Tools</h3>
+                        <p class="mt-1 text-sm leading-relaxed text-muted dark:text-light/60">LLM apps, RAG, agents &amp; copilots built on OpenAI and Claude.</p>
+                    </li>
+                    <li class="rounded-2xl border border-black/[0.06] bg-light/60 p-5 transition hover:border-primary/30 dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <span class="grid h-11 w-11 place-content-center rounded-xl bg-accent/10 text-accent dark:text-accent-light" aria-hidden="true">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><circle cx="6" cy="6" r="2.5" /><circle cx="18" cy="18" r="2.5" /><circle cx="18" cy="6" r="2.5" /><path d="M8.5 6h7M18 8.5v7M7.8 7.8l8.4 8.4" /></svg>
+							</span>
+                        <h3 class="mt-4 font-semibold dark:text-white">Business Automation</h3>
+                        <p class="mt-1 text-sm leading-relaxed text-muted dark:text-light/60">n8n / Zapier / custom workflows that cut hours of manual work.</p>
+                    </li>
+                    <li class="rounded-2xl border border-black/[0.06] bg-light/60 p-5 transition hover:border-primary/30 dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <span class="grid h-11 w-11 place-content-center rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400" aria-hidden="true">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" /></svg>
+							</span>
+                        <h3 class="mt-4 font-semibold dark:text-white">Dashboards &amp; Analytics</h3>
+                        <p class="mt-1 text-sm leading-relaxed text-muted dark:text-light/60">Real-time data, KPIs and reporting your team will actually use.</p>
+                    </li>
+                    <li class="rounded-2xl border border-black/[0.06] bg-light/60 p-5 transition hover:border-primary/30 dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <span class="grid h-11 w-11 place-content-center rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400" aria-hidden="true">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Z" /><path d="m3 7 9 5 9-5M12 12v10" /></svg>
+							</span>
+                        <h3 class="mt-4 font-semibold dark:text-white">3D Interactive Web</h3>
+                        <p class="mt-1 text-sm leading-relaxed text-muted dark:text-light/60">Three.js, R3F &amp; GSAP experiences, configurators and showcases.</p>
+                    </li>
+                    <li class="rounded-2xl border border-black/[0.06] bg-light/60 p-5 transition hover:border-primary/30 dark:border-white/[0.06] dark:bg-white/[0.02]">
+                        <span class="grid h-11 w-11 place-content-center rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400" aria-hidden="true">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14" /></svg>
+							</span>
+                        <h3 class="mt-4 font-semibold dark:text-white">Custom Websites &amp; Portals</h3>
+                        <p class="mt-1 text-sm leading-relaxed text-muted dark:text-light/60">Fast, SEO-ready sites and portals that convert visitors.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ============ EXPERIENCE ============ -->
+            <section class="bento reveal lg:col-span-4" style="--d: 80ms" aria-labelledby="exp-title">
+                <p class="eyebrow"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span> Journey</p>
+                <h2 id="exp-title" class="mt-2 text-2xl font-semibold tracking-tight dark:text-white">Experience</h2>
+                <ol class="relative mt-6 space-y-5 border-l border-black/10 pl-5 dark:border-white/10">
+                    <li class="relative">
+                        <span class="absolute -left-[26px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-primary dark:border-[#0B0C12]" aria-hidden="true"></span>
+                        <p class="font-mono text-[11px] uppercase tracking-wider text-muted dark:text-light/50">Now</p>
+                        <h3 class="font-semibold dark:text-white">Founder &amp; Lead Engineer</h3>
+                        <p class="text-sm text-muted dark:text-light/60">DevGrow</p>
+                    </li>
+                    <li class="relative">
+                        <span class="absolute -left-[26px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-black/20 dark:border-[#0B0C12] dark:bg-white/30" aria-hidden="true"></span>
+                        <p class="font-mono text-[11px] uppercase tracking-wider text-muted dark:text-light/50">2023 — Present</p>
+                        <h3 class="flex items-center gap-2 font-semibold dark:text-white">
+                            <img src="assets/img/cloud4c.png" alt="" width="18" height="18" class="h-[18px] w-[18px] rounded" />
+                            Full-Stack Developer
+                        </h3>
+                        <p class="text-sm text-muted dark:text-light/60">Cloud4C</p>
+                    </li>
+                    <li class="relative">
+                        <span class="absolute -left-[26px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-black/20 dark:border-[#0B0C12] dark:bg-white/30" aria-hidden="true"></span>
+                        <p class="font-mono text-[11px] uppercase tracking-wider text-muted dark:text-light/50">2022 — 2023</p>
+                        <h3 class="flex items-center gap-2 font-semibold dark:text-white">
+                            <img src="assets/img/imagineit.jpg" alt="" width="18" height="18" class="h-[18px] w-[18px] rounded" />
+                            Frontend Developer
+                        </h3>
+                        <p class="text-sm text-muted dark:text-light/60">Imagine IT</p>
+                    </li>
+                    <li class="relative">
+                        <span class="absolute -left-[26px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-black/20 dark:border-[#0B0C12] dark:bg-white/30" aria-hidden="true"></span>
+                        <p class="font-mono text-[11px] uppercase tracking-wider text-muted dark:text-light/50">2021 — 2022</p>
+                        <h3 class="flex items-center gap-2 font-semibold dark:text-white">
+                            <img src="assets/img/skillvertex.jpg" alt="" width="18" height="18" class="h-[18px] w-[18px] rounded" />
+                            Web Developer
+                        </h3>
+                        <p class="text-sm text-muted dark:text-light/60">Skill Vertex</p>
+                    </li>
+                    <li class="relative">
+                        <span class="absolute -left-[26px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-black/20 dark:border-[#0B0C12] dark:bg-white/30" aria-hidden="true"></span>
+                        <p class="font-mono text-[11px] uppercase tracking-wider text-muted dark:text-light/50">2018 — 2021</p>
+                        <h3 class="flex items-center gap-2 font-semibold dark:text-white">
+                            <img src="assets/img/computersociety.jpg" alt="" width="18" height="18" class="h-[18px] w-[18px] rounded" />
+                            Technical Head
+                        </h3>
+                        <p class="text-sm text-muted dark:text-light/60">Computer Society of India</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- ============ CTA ============ -->
+            <section class="bento reveal relative overflow-hidden !border-transparent !bg-dark text-white dark:!bg-[#0B0C12] lg:col-span-12 lg:p-14" aria-labelledby="cta-title">
+                <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_80%_at_0%_0%,rgba(124,58,237,0.45),transparent_60%),radial-gradient(50%_70%_at_100%_100%,rgba(8,145,178,0.35),transparent_60%)]" aria-hidden="true"></div>
+                <div class="relative flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
+                    <div class="max-w-3xl">
+                        <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-white/60">Have an idea?</p>
+                        <h2 id="cta-title" class="mt-3 text-balance text-4xl font-semibold leading-[1.05] tracking-tight lg:text-6xl">
+                            Let's turn your idea into a real product.
+                        </h2>
+                        <p class="mt-4 max-w-xl text-lg text-white/70">
+                            Website, SaaS, automation tool, dashboard or high-end 3D experience — built
+                            end-to-end with clean code &amp; stunning UI/UX.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://cal.com/mohdaman/web-discuss?layout=mobile" target="_blank" rel="noopener" class="inline-flex min-h-[52px] items-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-dark transition hover:bg-primary-light focus:outline-none focus-visible:ring-2 focus-visible:ring-white active:scale-[0.98]">
+                            Book a Call
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+                                <path d="M6 14 14 6M7 6h7v7" />
+                            </svg>
+                        </a>
+                        <a href="mailto:mohammedamannawaz@gmail.com" class="inline-flex min-h-[52px] items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                            Email me
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
-        <footer class="text-center">
-            <p class="text-sm dark:text-light/70">
-                @ BentoFolio 2023, Design By
-                <a href="https://codewithbeast.com" class="inline-block border-b border-b-transparent text-primary transition hover:border-b-primary hover:text-blue-600">
-                    CodewithBeast
+        <footer class="flex flex-col items-center justify-between gap-3 rounded-2xl border border-black/[0.06] bg-white/60 px-6 py-5 text-sm text-muted backdrop-blur dark:border-white/[0.07] dark:bg-black/40 dark:text-light/60 md:flex-row">
+            <p>
+                &copy; <span data-year>2026</span> Mohammed Aman · Founder of
+                <a href="https://devgrow.org" target="_blank" rel="noopener" class="font-medium text-primary transition hover:underline dark:text-primary-light">
+                    DevGrow
                 </a>
             </p>
+            <nav aria-label="Social links" class="flex flex-wrap items-center gap-4">
+                <a href="https://github.com/beastaman" target="_blank" rel="noopener" class="transition hover:text-dark dark:hover:text-white">GitHub</a>
+                <a href="https://linkedin.com/in/beastaman" target="_blank" rel="noopener" class="transition hover:text-dark dark:hover:text-white">LinkedIn</a>
+                <a href="https://devgrow.org" target="_blank" rel="noopener" class="transition hover:text-dark dark:hover:text-white">DevGrow</a>
+                <a href="mailto:mohammedamannawaz@gmail.com" class="transition hover:text-dark dark:hover:text-white">Email</a>
+            </nav>
         </footer>
+
     </div>
 
-    <div class="shapes">
-        <div class="fixed -left-1/2 -top-1/2 -z-10 animate-spin-very-slow xl:-left-[20%] xl:-top-1/3">
-            <img src="assets/img/gradient-1.png" alt="" class="" />
-        </div>
-
-        <div class="fixed -right-[50%] top-[10%] -z-10 animate-spin-very-slow xl:-right-[15%] xl:top-[10%]">
-            <img src="assets/img/gradient-2.png" alt="" class="" />
-        </div>
-
-        <div class="move-with-cursor fixed left-[10%] top-[20%] -z-10">
-            <img src="assets/img/object-3d-1.png" alt="" class="" />
-        </div>
-
-        <div class="move-with-cursor fixed bottom-[20%] right-[10%] -z-10">
-            <img src="assets/img/object-3d-2.png" alt="" class="" />
-        </div>
+    <!-- Ambient background -->
+    <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
+        <div class="absolute -left-40 -top-40 h-[520px] w-[520px] rounded-full bg-primary/20 blur-[120px] dark:bg-primary/25"></div>
+        <div class="absolute -right-40 top-1/3 h-[480px] w-[480px] rounded-full bg-accent/15 blur-[120px] dark:bg-accent/20"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.035)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.035)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(ellipse_at_top,#000_30%,transparent_75%)] dark:bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)]"></div>
     </div>
 
     <script src="./assets/js/preline.js"></script>

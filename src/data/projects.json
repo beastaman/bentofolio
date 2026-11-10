@@ -1,0 +1,189 @@
+[
+ {
+  "cat": "3d",
+  "label": "3D Experience",
+  "title": "White Kaleido",
+  "url": "https://whitekaleido.com",
+  "domain": "whitekaleido.com",
+  "desc": "Immersive, scroll-driven 3D brand experience with cinematic motion and real-time rendering.",
+  "stack": "Three.js · React · GSAP",
+  "grad": "from-slate-800 to-zinc-600",
+  "img": "assets/img/projects/white-kaleido.jpg"
+ },
+ {
+  "cat": "web",
+  "label": "Video Production Studio",
+  "title": "Solaris Films",
+  "url": "https://www.thesolarisfilms.com",
+  "domain": "thesolarisfilms.com",
+  "desc": "Cinematic website for a Bengaluru video production studio — showreels, services and enquiries.",
+  "stack": "Next.js · TypeScript · GSAP",
+  "grad": "from-amber-500 to-rose-500",
+  "img": "assets/img/projects/solaris-films.jpg"
+ },
+ {
+  "cat": "web",
+  "label": "Commercial Spaces",
+  "title": "The Setup Co.",
+  "url": "https://www.thesetupco.in",
+  "domain": "thesetupco.in",
+  "desc": "Commercial space setup brand — services, portfolio and lead capture, set up seamlessly.",
+  "stack": "Next.js · TypeScript · Tailwind",
+  "grad": "from-stone-700 to-amber-600",
+  "img": "assets/img/projects/the-setup-co.jpg"
+ },
+ {
+  "cat": "3d",
+  "label": "3D Product",
+  "title": "Nimbus Keyboard 3D",
+  "url": "https://nimbus-keyboard-3-d.vercel.app",
+  "domain": "nimbus-keyboard-3-d.vercel.app",
+  "desc": "Interactive 3D product showcase — explore, rotate and customise a mechanical keyboard live.",
+  "stack": "Three.js · React Three Fiber · GSAP",
+  "grad": "from-indigo-600 to-sky-500",
+  "img": "assets/img/projects/nimbus-keyboard-3d.jpg"
+ },
+ {
+  "cat": "saas",
+  "label": "AI · EdTech",
+  "title": "BrilliantDojo",
+  "url": "https://brilliantdojo.net",
+  "domain": "brilliantdojo.net",
+  "desc": "AI-powered learning platform with personalised paths, progress tracking and admin dashboards.",
+  "stack": "Next.js · TypeScript · OpenAI · PostgreSQL",
+  "grad": "from-fuchsia-600 to-violet-500",
+  "img": "assets/img/projects/brilliantdojo.jpg"
+ },
+ {
+  "cat": "saas",
+  "label": "SaaS · Reddit Growth",
+  "title": "SubredditPro",
+  "url": "https://subredditpro.com",
+  "domain": "subredditpro.com",
+  "desc": "Platform that pays creators to grow Reddit communities — campaigns, payouts and dashboards.",
+  "stack": "Next.js · TypeScript · Node.js · Stripe",
+  "grad": "from-orange-600 to-red-500",
+  "img": "assets/img/projects/subredditpro.jpg"
+ },
+ {
+  "cat": "saas",
+  "label": "PropTech SaaS",
+  "title": "Digital Realtor",
+  "url": "https://digital-realtor.vercel.app",
+  "domain": "digital-realtor.vercel.app",
+  "desc": "Real-estate platform with listings, smart search and lead capture for agents.",
+  "stack": "Next.js · TypeScript · Tailwind",
+  "grad": "from-amber-500 to-orange-500",
+  "img": "assets/img/projects/digital-realtor.jpg"
+ },
+ {
+  "cat": "web",
+  "label": "Motorsports Academy",
+  "title": "UMA — United Motorsports Academy",
+  "url": "https://umaweb-beta.vercel.app/en/",
+  "domain": "umaweb-beta.vercel.app",
+  "desc": "Multilingual, high-energy website for a motorsports academy — programs, events and sign-ups.",
+  "stack": "Next.js · TypeScript · i18n · GSAP",
+  "grad": "from-red-600 to-zinc-800",
+  "img": "assets/img/projects/uma.jpg"
+ },
+ {
+  "cat": "saas",
+  "label": "SaaS · Fintech",
+  "title": "Sleft Payments",
+  "url": "https://sleftpayments.com",
+  "domain": "sleftpayments.com",
+  "desc": "Merchant payments platform with secure checkout flows, onboarding and real-time transaction insights.",
+  "stack": "Next.js · TypeScript · Node.js · Stripe",
+  "grad": "from-violet-600 to-indigo-500",
+  "img": "assets/img/projects/sleft-payments.jpg"
+ },
+ {
+  "cat": "saas",
+  "label": "Analytics · Marketing",
+  "title": "Sleft Signals",
+  "url": "https://sleftsignals.com",
+  "domain": "sleftsignals.com",
+  "desc": "Marketing signals & analytics suite turning campaign data into actionable dashboards.",
+  "stack": "Next.js · TypeScript · Node.js · Charts",
+  "grad": "from-emerald-500 to-teal-400",
+  "img": "assets/img/projects/sleft-signals.jpg"
+ },
+ {
+  "cat": "saas",
+  "label": "Platform",
+  "title": "Shiftfdn",
+  "url": "https://shiftfdn.com",
+  "domain": "shiftfdn.com",
+  "desc": "Foundation platform with content management, programs and donor-ready landing experience.",
+  "stack": "Next.js · TypeScript · CMS",
+  "grad": "from-rose-500 to-pink-500",
+  "img": "assets/img/projects/shiftfdn.jpg"
+ },
+ {
+  "cat": "saas",
+  "label": "AI · Audio",
+  "title": "Tonexyio",
+  "url": "https://tonexyio.vercel.app",
+  "domain": "tonexyio.vercel.app",
+  "desc": "AI-driven tone & audio tooling with a clean, conversion-focused product experience.",
+  "stack": "Next.js · TypeScript · AI APIs",
+  "grad": "from-purple-600 to-fuchsia-500",
+  "img": "assets/img/projects/tonexyio.jpg"
+ },
+ {
+  "cat": "saas",
+  "label": "Productivity SaaS",
+  "title": "Project Management App",
+  "url": "https://project-management-gs.vercel.app",
+  "domain": "project-management-gs.vercel.app",
+  "desc": "Kanban boards, tasks, teams and timelines — a full project management workspace.",
+  "stack": "Next.js · TypeScript · Prisma · PostgreSQL",
+  "grad": "from-blue-600 to-indigo-500",
+  "img": "assets/img/projects/project-management-app.jpg"
+ },
+ {
+  "cat": "3d",
+  "label": "3D Configurator",
+  "title": "3D T-Shirt Customizer",
+  "url": "https://threejs-t-shirt.vercel.app",
+  "domain": "threejs-t-shirt.vercel.app",
+  "desc": "Real-time 3D apparel customiser with colour, logo and texture controls.",
+  "stack": "Three.js · React · Valtio",
+  "grad": "from-teal-500 to-emerald-400",
+  "img": "assets/img/projects/3d-t-shirt-customizer.jpg"
+ },
+ {
+  "cat": "web",
+  "label": "Business Portal",
+  "title": "RepairFox",
+  "url": "https://repairfox.org",
+  "domain": "repairfox.org",
+  "desc": "Repair-service portal with service booking, pricing and lead generation.",
+  "stack": "Next.js · Tailwind · Node.js",
+  "grad": "from-orange-500 to-red-500",
+  "img": ""
+ },
+ {
+  "cat": "web",
+  "label": "Booking Platform",
+  "title": "Hotel Booking Platform",
+  "url": "https://hb-gs.vercel.app",
+  "domain": "hb-gs.vercel.app",
+  "desc": "Hotel discovery & booking with room availability, filters and reservations.",
+  "stack": "React · Node.js · MongoDB",
+  "grad": "from-cyan-600 to-blue-500",
+  "img": "assets/img/projects/hotel-booking-platform.jpg"
+ },
+ {
+  "cat": "web",
+  "label": "Agency",
+  "title": "DevGrow",
+  "url": "https://devgrow.org",
+  "domain": "devgrow.org",
+  "desc": "My web, SaaS & AI automation agency — 20+ production apps shipped for clients worldwide.",
+  "stack": "Next.js · TypeScript · GSAP · Three.js",
+  "grad": "from-violet-600 to-cyan-500",
+  "img": "assets/img/projects/devgrow.jpg"
+ }
+]

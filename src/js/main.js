@@ -265,3 +265,87 @@ if (form) {
 		xhr.send(formData);
 	});
 }
+
+// ================= Premium UI enhancements =================
+(() => {
+	const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+	// Footer year
+	document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
+
+	// Cursor spotlight on bento cards (pointer devices only)
+	if (window.matchMedia("(hover: hover)").matches) {
+		document.querySelectorAll(".bento").forEach((card) => {
+			card.addEventListener("pointermove", (e) => {
+				const r = card.getBoundingClientRect();
+				card.style.setProperty("--mx", `${e.clientX - r.left}px`);
+				card.style.setProperty("--my", `${e.clientY - r.top}px`);
+			});
+		});
+	}
+
+	// Scroll reveal with stagger for project cards
+	const revealEls = document.querySelectorAll(".reveal");
+	document.querySelectorAll(".project-item").forEach((el, i) => el.style.setProperty("--d", `${(i % 3) * 60}ms`));
+	if (reduceMotion || !("IntersectionObserver" in window)) {
+		revealEls.forEach((el) => el.classList.add("is-in"));
+	} else {
+		const io = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("is-in");
+						io.unobserve(entry.target);
+					}
+				});
+			},
+			{ root: null, rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+		);
+		revealEls.forEach((el) => io.observe(el));
+	}
+
+	// Count-up stats
+	const counters = document.querySelectorAll("[data-count]");
+	if (!reduceMotion && counters.length && "IntersectionObserver" in window) {
+		const co = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (!entry.isIntersecting) return;
+				const el = entry.target;
+				const end = +el.dataset.count;
+				const start = performance.now();
+				const dur = 1200;
+				const tick = (now) => {
+					const p = Math.min((now - start) / dur, 1);
+					el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+					if (p < 1) requestAnimationFrame(tick);
+				};
+				requestAnimationFrame(tick);
+				co.unobserve(el);
+			});
+		});
+		counters.forEach((el) => co.observe(el));
+	}
+
+	// Project filters
+	const group = document.querySelector("[data-filter-group]");
+	if (group) {
+		const items = document.querySelectorAll("[data-filter-grid] .project-item");
+		const status = document.querySelector("[data-filter-status]");
+		group.addEventListener("click", (e) => {
+			const btn = e.target.closest("[data-filter]");
+			if (!btn) return;
+			const f = btn.dataset.filter;
+			group.querySelectorAll("[data-filter]").forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+			let shown = 0;
+			items.forEach((item) => {
+				const match = f === "all" || item.dataset.cat === f;
+				item.hidden = !match;
+				if (match) {
+					shown++;
+					item.classList.add("is-in");
+				}
+			});
+			if (status) status.textContent = `${shown} project${shown === 1 ? "" : "s"} shown`;
+		});
+	}
+})();

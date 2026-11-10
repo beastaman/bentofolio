@@ -242,6 +242,9 @@ exports.default = series(
 	watchTask
 );
 
+// Compile to /build once (no server/watch)
+exports.compile = series(cleanAll, parallel(htmlTask, cssTask, jsTask, imgTask, fontsTask, phpTask));
+
 // Gulp production task
 exports.prod = series(
 	cleanDist,
